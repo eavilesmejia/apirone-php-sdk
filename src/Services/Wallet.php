@@ -72,7 +72,7 @@ class Wallet implements WalletInterface
                 $payload["callback"]["data"] = $callback_data;
             }
         }
-        $url = $this->getURL(self::ENDPOINTS['generateAddress'], [$wallet_id]);
+        $url = $this->getURL(self::ENDPOINTS['generateAddress'], [trim($wallet_id)]);
         return $this->post($url, $payload);
     }
 
@@ -82,7 +82,7 @@ class Wallet implements WalletInterface
      */
     public function getBalance(string $wallet_id): array
     {
-        $url = $this->getURL(self::ENDPOINTS['getBalance'], [$wallet_id]);
+        $url = $this->getURL(self::ENDPOINTS['getBalance'], [trim($wallet_id)]);
         return $this->get($url);
     }
 
@@ -98,7 +98,7 @@ class Wallet implements WalletInterface
             "transfer_key" => $transfer_key,
             "destinations" => $destinations
         ];
-        $url = $this->getURL(self::ENDPOINTS['transfer'], [$wallet_id]);
+        $url = $this->getURL(self::ENDPOINTS['transfer'], [trim($wallet_id)]);
         return $this->post($url, $payload);
     }
 }

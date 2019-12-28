@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8642d9a-e8a3-4a51-861a-c2033f901dd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Wallet.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Wallet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/Api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/Api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/unit/Services/WalletTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/Services/WalletTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,18 +59,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577298062102</updated>
-      <workItem from="1577298063781" duration="16998000" />
+      <workItem from="1577298063781" duration="17429000" />
     </task>
+    <task id="LOCAL-00001" summary="fix create wallet">
+      <created>1577572875423</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577572875423</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix create wallet" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix create wallet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="181" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1577545755558">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="181" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1577545755558" />
+    <state x="-1349" y="142" key="CommitChangelistDialog2" timestamp="1577572875344">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1349" y="142" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1080.1920@-1920.0.1920.1080" timestamp="1577572875344" />
     <state x="470" y="370" key="ComposerInitDialogKey" timestamp="1577298298761">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
