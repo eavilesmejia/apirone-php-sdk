@@ -14,8 +14,8 @@ class Wallet implements WalletInterface
     const ENDPOINTS = [
         'create' => '/wallet',
         'generateAddress' => '/wallet/%s/address',
-        'getBalance' => 'wallet/%s/balance',
-        'transfer' => 'wallet/%s/transfer'
+        'getBalance' => '/wallet/%s/balance',
+        'transfer' => '/wallet/%s/transfer'
     ];
 
     /**
