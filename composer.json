@@ -5,7 +5,7 @@
   "minimum-stability": "dev",
   "repositories": [
     {
-      "type": "git",
+      "type": "vcs",
       "url": "https://github.com/eavilesmejia/apirone-php-sdk.git"
     }
   ],
