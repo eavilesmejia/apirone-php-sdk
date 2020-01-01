@@ -6,21 +6,21 @@ use Apirone\Services\Wallet;
 
 class WalletTest extends TestCase
 {
-    public function testCreateBTCWallet()
+    public function testCreateBTCWallet(): void
     {
         $walletService = new Wallet();
         $wallet_result = $walletService->create('saving', 'btc');
         $this->assertArrayHasKey('transfer_key', $wallet_result);
     }
 
-    public function testCreateLTCWallet()
+    public function testCreateLTCWallet(): void
     {
         $walletService = new Wallet();
         $wallet_result = $walletService->create('saving', 'ltc');
         $this->assertArrayHasKey('transfer_key', $wallet_result);
     }
 
-    public function testGenerateBTCAddress()
+    public function testGenerateBTCAddress(): void
     {
         $wallet_id = 'btc-35792d71cd48b19dc155ce7e25f221aa';
         $walletService = new Wallet();
@@ -28,16 +28,15 @@ class WalletTest extends TestCase
         $this->assertArrayHasKey('address', $address_result);
     }
 
-    public function testGenerateLTCAddress()
+    public function testGenerateLTCAddress(): void
     {
         $wallet_id = 'ltc-dc00b7ded8ef9e1f7d322ae386254944';
         $walletService = new Wallet();
         $address_result = $walletService->generateAddress($wallet_id, 'http://requestbin.net/r/v6uefsv6');
-        print_r($address_result);
         $this->assertArrayHasKey('address', $address_result);
     }
 
-    public function testTransferBTC()
+    public function testTransferBTC(): void
     {
         $wallet_id = 'btc-35792d71cd48b19dc155ce7e25f221aa';
         $transfer_id = '8cjMi1jU0cD4o12Vuyvs8jB9bOBpkC4u';
@@ -53,7 +52,6 @@ class WalletTest extends TestCase
         ];
         $walletService = new Wallet();
         $result = $walletService->transfer($wallet_id, $transfer_id, $destination);
-        print_r($result);
         $this->assertArrayHasKey('txs', $result);
         /*
         [txs] => Array
@@ -70,7 +68,7 @@ class WalletTest extends TestCase
 
     }
 
-    public function testTransferLTC()
+    public function testTransferLTC(): void
     {
         $wallet_id = 'ltc-dc00b7ded8ef9e1f7d322ae386254944';
         $transfer_id = 'bfiT1aP2EtKApYkhAEZhajyoL191aFKS';

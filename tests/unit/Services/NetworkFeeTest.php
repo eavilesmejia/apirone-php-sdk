@@ -6,7 +6,7 @@ use Apirone\Services\NetworkFee;
 
 class NetworkFeeTest extends TestCase
 {
-    public function testBTCFee()
+    public function testBTCFee(): void
     {
         $network_fee = new NetworkFee();
         $result = $network_fee->fee();
