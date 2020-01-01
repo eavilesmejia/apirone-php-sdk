@@ -1,1 +1,1 @@
-php vendor/bin/phpunit --bootstrap vendor/autoload.php --filter testCreateWallet tests/unit/Services/WalletTest.php
+php vendor/bin/phpunit --bootstrap vendor/autoload.php --filter testTransfer tests/unit/Services/WalletTest.php
