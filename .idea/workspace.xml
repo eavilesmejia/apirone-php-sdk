@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8642d9a-e8a3-4a51-861a-c2033f901dd2" name="Default Changelist" comment="">
+    <list default="true" id="c8642d9a-e8a3-4a51-861a-c2033f901dd2" name="Default Changelist" comment="fix create wallet">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/NetworkFeeInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/NetworkFee.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Wallet.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Wallet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/unit/Services/WalletTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/Services/WalletTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +18,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,10 +100,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="181" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1577545755558" />
-    <state x="-1349" y="142" key="CommitChangelistDialog2" timestamp="1577572875344">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="428" y="105" key="CommitChangelistDialog2" timestamp="1577842684098">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="-1349" y="142" key="CommitChangelistDialog2/-1920.0.1920.1080/0.0.1080.1920@-1920.0.1920.1080" timestamp="1577572875344" />
+    <state x="428" y="105" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1577842684098" />
     <state x="470" y="370" key="ComposerInitDialogKey" timestamp="1577298298761">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
