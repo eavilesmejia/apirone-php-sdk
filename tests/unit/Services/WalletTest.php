@@ -68,9 +68,30 @@ class WalletTest extends TestCase
 
     }
 
+    //TODO: wriete LTC testing
     public function testTransferLTC(): void
     {
         $wallet_id = 'ltc-dc00b7ded8ef9e1f7d322ae386254944';
         $transfer_id = 'bfiT1aP2EtKApYkhAEZhajyoL191aFKS';
+    }
+
+    public function testGetBTCBalance(): void
+    {
+        $wallet_id = '5484e54ec0bb35c95b79d7338399900f';
+        $walletService = new Wallet();
+        $result = $walletService->getBalance($wallet_id);
+        print_r($result);
+        $this->assertArrayHasKey('total', $result);
+        $this->assertEquals($result['currency'], 'btc');
+    }
+
+    public function testGetLTCBalance(): void
+    {
+        $wallet_id = 'ltc-dc00b7ded8ef9e1f7d322ae386254944';
+        $walletService = new Wallet();
+        $result = $walletService->getBalance($wallet_id);
+        print_r($result);
+        $this->assertArrayHasKey('total', $result);
+        $this->assertEquals($result['currency'], 'ltc');
     }
 }
