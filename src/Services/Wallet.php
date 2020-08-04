@@ -68,7 +68,7 @@ class Wallet implements WalletInterface
                 ]
             ];
 
-            if (empty($callback_data)) {
+            if (!empty($callback_data)) {
                 $payload["callback"]["data"] = $callback_data;
             }
         }
