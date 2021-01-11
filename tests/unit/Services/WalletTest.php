@@ -77,12 +77,12 @@ class WalletTest extends TestCase
 
     public function testGetBTCBalance(): void
     {
-        $wallet_id = '5484e54ec0bb35c95b79d7338399900f';
+        $wallet_id = 'btc-cae5381d4c18bbc0933e3acffa6cb41d';
         $walletService = new Wallet();
         $result = $walletService->getBalance($wallet_id);
         print_r($result);
         $this->assertArrayHasKey('total', $result);
-        $this->assertEquals($result['currency'], 'btc');
+        $this->assertEquals($result['total'], 'btc');
     }
 
     public function testGetLTCBalance(): void
@@ -92,6 +92,6 @@ class WalletTest extends TestCase
         $result = $walletService->getBalance($wallet_id);
         print_r($result);
         $this->assertArrayHasKey('total', $result);
-        $this->assertEquals($result['currency'], 'ltc');
+        $this->assertEquals($result['total'], 'ltc');
     }
 }

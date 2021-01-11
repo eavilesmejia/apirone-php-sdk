@@ -12,10 +12,10 @@ class Wallet implements WalletInterface
     use Api;
 
     const ENDPOINTS = [
-        'create' => '/wallet',
-        'generateAddress' => '/wallet/%s/address',
-        'getBalance' => '/wallet/%s/balance',
-        'transfer' => '/wallet/%s/transfer'
+        'create' => '/wallets',
+        'generateAddress' => '/wallets/%s/address',
+        'getBalance' => '/wallets/%s/balance',
+        'transfer' => '/wallets/%s/transfer'
     ];
 
     /**
